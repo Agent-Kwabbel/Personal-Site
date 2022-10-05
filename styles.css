@@ -1,86 +1,127 @@
-html {
+body {
+    background-color: #2D2D2D;
+    margin: 0px 0px 0px 0px;
     overflow-x: hidden;
 }
 
-body {
-    background-color: #2D2D2D;
-    margin-left: 0px;
-    margin-right: 0px;
+/* Header and navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: Black;
+    width: 100%;
+    align-items: center;
 }
 
 .topnav {
-    width: 100%;
-    position: fixed;
+    list-style: none;
     top: 0;
     left: 0;
-    background-color: Black;
     font-family: Arial, sans-serif;
     font-size: 15px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.topnav ul {
+    display: flex;
 }
 
 .nav-link {
-    display: block;
-    width: 100px;
-    height: 55px;
-    color: White;
-    text-align: center;
-    line-height: 55px;
-    text-decoration: none;
-    float: right;
-    padding: unset 100px unset 100px;
-    transition-duration: 1s;
+    text-decoration: underline solid transparent;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: underline solid Currentcolor;
 }
 
 .logo {
-    width: 160px;
     background-color: RoyalBlue;
     font-weight: bold;
-    float: left;
     letter-spacing: 1.5px;
-
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0px 0px 0px 0px;
 }
 
-.logo:hover {
-    letter-spacing: 2px;
-    font-size: 1.02rem;
+.logo a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .page-active {
     font-weight: 600;
 }
 
+
+/* Hero */
 .hero {
-    margin: 55px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-.hero-img {
-    margin-left: -100px;
-}
-
-.hero h1,
-h2 {
-    margin: 0px 0px 0px 0px;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 350px;
+    background-image: url("https://www.djoamersfoort.nl/wp-content/uploads/2018/09/border2.png");
 }
 
 .hero h1 {
     font-size: 4rem;
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+.hero-text h1, h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
+.hero-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 1182px) {
+    .sub-hero {
+        height: unset;
+    }
+    
+    .sub-hero-div p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 814px) {
+    .sub-hero img {
+        display: none;
+    }
+
+    .sub-hero {
+        height: 100px !important;
+        display: flex;
+        align-items: center !important;
+        flex-direction: column;
+    }
+
+    .sub-hero a {
+        text-align: center;
+    }
+
+    .sub-hero-div {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+/* Sub hero's */
 .sub-hero {
     min-width: 100%;
     height: 350px;
@@ -98,17 +139,20 @@ h2 {
 }
 
 .sub-hero-div {
+    height: 100%;
+    display: flex;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 640px;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding-left: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .right-sub-hero .sub-hero-div {
     padding-left: 0px;
+    padding-right: 20px;
     text-align: right;
-    margin-right: 640px;
 }
 
 .sub-hero-div h1 {
@@ -122,23 +166,23 @@ h2 {
 }
 
 .sub-hero-div p {
-    padding-right: 40px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .right-sub-hero p {
     padding-right: 0px;
     margin-right: 0px;
-    padding-left: 40px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
+/* Revieuws */
 .review {
     width: 100%;
     height: 200px;
     line-height: 200px;
     background-color: #1e1e1e;
     text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .review h2 {
