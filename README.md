@@ -1,1 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8789021&assignment_repo_type=AssignmentRepo)
+## Personal-Site
+
+My personal site for high school computer science :) I didn't have the time to complete all pages and make it responsive, but mabye I will work on it later for personal use.
